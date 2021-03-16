@@ -1,0 +1,22 @@
+{
+  "name": "ost.we3.samples.angular",
+  "version": "1.0.0",
+  "description": "Samples for Angular lectures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IFS-Web/OST.WE3.Samples.Angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IFS-Web/OST.WE3.Samples.Angular/issues"
+  },
+  "homepage": "https://github.com/IFS-Web/OST.WE3.Samples.Angular#readme",
+  "dependencies": {
+    "@angular/cli": "^11.2.4"
+  }
+}
