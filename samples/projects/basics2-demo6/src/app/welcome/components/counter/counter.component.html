@@ -1,0 +1,8 @@
+<p>Your team is <strong>{{counter?.team}}</strong></p>
+<p>Your current count is <strong>{{counter?.count}}</strong></p>
+
+<form>
+  <ng-content select="[button-bar-item]"></ng-content>
+  <button (click)="up($event)">Count Up</button>
+  <button [routerLink]="['./', counter ? counter.count : 0]">Finish</button>
+</form>

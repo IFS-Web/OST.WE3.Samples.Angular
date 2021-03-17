@@ -1,0 +1,14 @@
+:host {
+  background-color: lightgray;
+  display: block;
+}
+
+:host ::ng-deep button {
+  font-style: italic;
+  font-weight: bold;
+}
+
+p {
+  color: white;
+  display: block;
+}
