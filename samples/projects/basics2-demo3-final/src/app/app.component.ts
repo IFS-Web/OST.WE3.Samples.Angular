@@ -7,4 +7,5 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'WE3';
+  hidden = false;
 }

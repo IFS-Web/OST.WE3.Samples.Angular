@@ -18,7 +18,7 @@ export class CounterComponent implements OnInit, OnDestroy {
   constructor(private counterService: CounterService) { // TODO: add change detector
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.counterSubscription = this.counterService.modelChanged.subscribe((model: CounterModel) => {
       this.counter = model;
       // TODO: notify change detector
@@ -26,8 +26,8 @@ export class CounterComponent implements OnInit, OnDestroy {
     this.counterService.load();
   }
 
-  ngOnDestroy() {
-    this.counterSubscription!.unsubscribe();
+  ngOnDestroy(): void {
+    this.counterSubscription?.unsubscribe();
   }
 
   up(event: UIEvent): void {

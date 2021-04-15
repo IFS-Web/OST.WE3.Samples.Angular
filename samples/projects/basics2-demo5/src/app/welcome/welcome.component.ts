@@ -7,13 +7,15 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 })
 export class WelcomeComponent implements OnInit, OnDestroy {
 
+  hidden = false;
+
   constructor() {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
   }
 
 }

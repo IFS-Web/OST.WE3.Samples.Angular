@@ -10,10 +10,10 @@ export class WelcomeComponent implements OnInit, OnDestroy {
   constructor() {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
   }
 
 }

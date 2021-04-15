@@ -17,15 +17,15 @@ export class CounterComponent implements OnInit, OnDestroy {
   constructor(private counterService: CounterService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.counterSubscription = this.counterService.modelChanged.subscribe((model: CounterModel) => {
       this.counter = model;
     });
     this.counterService.load();
   }
 
-  ngOnDestroy() {
-    this.counterSubscription!.unsubscribe();
+  ngOnDestroy(): void {
+    this.counterSubscription?.unsubscribe();
   }
 
   up(event: UIEvent): void {
