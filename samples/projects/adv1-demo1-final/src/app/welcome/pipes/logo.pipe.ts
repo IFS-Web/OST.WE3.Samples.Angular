@@ -14,7 +14,7 @@ import {Pipe, PipeTransform} from '@angular/core';
  */
 @Pipe({name: 'logo', pure: true})
 export class LogoPipe implements PipeTransform {
-  private logos: { [key: string] : { [key: string]: string } } = {
+  private logos: { [key: string]: { [key: string]: string } } = {
     Bulls: {toImage: 'assets/bulls.png', unspec: 'Butrue Bulls'},
     Tigers: {toImage: 'assets/tigers.png', unspec: 'Langau Tigers'}
   };
