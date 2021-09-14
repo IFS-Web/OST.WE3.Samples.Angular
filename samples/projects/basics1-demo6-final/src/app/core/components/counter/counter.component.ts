@@ -16,7 +16,7 @@ export class CounterComponent implements OnInit {
     this.counter = counterService.load();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   up(event: UIEvent): void {

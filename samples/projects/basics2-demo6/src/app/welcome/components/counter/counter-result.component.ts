@@ -15,14 +15,14 @@ export class CounterResultComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.routeSubscription = this.route.params.subscribe(params => {
       this.result = params.res;
     });
   }
 
-  ngOnDestroy() {
-    this.routeSubscription!.unsubscribe();
+  ngOnDestroy(): void {
+    this.routeSubscription?.unsubscribe();
   }
 }
 

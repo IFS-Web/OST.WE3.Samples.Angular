@@ -16,11 +16,11 @@ export class CounterComponent implements OnInit, OnDestroy {
     this.counter = counterService.load();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log('OnInit');
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     console.log('OnDestroy');
   }
 

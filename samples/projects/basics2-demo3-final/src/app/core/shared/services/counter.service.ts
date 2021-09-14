@@ -12,9 +12,10 @@ export class CounterService {
   }
 
   public up(): void {
-    this.model.count++;
-    this.modelChanged.emit(this.model);
+    if (this.model) {
+      this.model.count++;
+      this.modelChanged.emit(this.model);
+    }
   }
-
 }
 
